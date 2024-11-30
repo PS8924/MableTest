@@ -1,4 +1,4 @@
-function isValid(s: string): boolean {
+const isValid = (s: string): boolean => {
     const stack: string[] = [];
     const bracketMap: { [key: string]: string } = {
         ')': '(',
@@ -18,8 +18,8 @@ function isValid(s: string): boolean {
     return stack.length === 0;
 }
 
-console.log(isValid("()"));      // true
-console.log(isValid("[()]"));    // true
-console.log(isValid("[(])"));    // false
-console.log(isValid("{"));       // false
-console.log(isValid("}{"));      // false
+console.log(isValid("()"));
+console.log(isValid("[()]"));
+console.log(isValid("[(])"));
+console.log(isValid("{"));
+console.log(isValid("}{"));
